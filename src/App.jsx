@@ -4,7 +4,7 @@ import { ListTodos } from "./components/ListTodos";
 import { useState } from "react";
 
 function App() {
-	const [todos, setTodos] = useState(storedvalue);
+	const [todos, setTodos] = useState([]);
 
 	const addTodo = (todo) => {
 		setTodos((prev) => [...prev, todo]);
